@@ -4249,9 +4249,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"screenfull@workspace:.":
+"screenfull-cjs-es6@workspace:.":
   version: 0.0.0-use.local
-  resolution: "screenfull@workspace:."
+  resolution: "screenfull-cjs-es6@workspace:."
   dependencies:
     clean-package: ^2.1.1
     cpr: ^3.0.1

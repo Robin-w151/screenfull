@@ -1,5 +1,5 @@
 {
-	"name": "screenfull",
+	"name": "screenfull-cjs-es6",
 	"version": "7.0.0",
 	"description": "Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which lets you bring the page or any element into fullscreen.",
 	"license": "MIT",
@@ -9,32 +9,31 @@
 		"email": "robinwunderbaldinger@gmail.com"
 	},
 	"keywords": [
-	  "browser",
-	  "fullscreen"
+		"browser",
+		"fullscreen"
 	],
 	"type": "module",
 	"main": "dist/screenfull.cjs.js",
-    "module": "dist/screenfull.esm.js",
-    "browser": "dist/screenfull.umd.js",
+	"module": "dist/screenfull.esm.js",
 	"engines": {
 		"node": "^14.13.1 || >=16.0.0"
 	},
 	"files": [
-	  "/dist"
+		"/dist"
 	],
 	"scripts": {
 		"build": "vite build && cpr index.d.ts dist/screenfull.d.ts",
 		"prepack": "clean-package",
-	    "postpack": "clean-package restore",
+		"postpack": "clean-package restore",
 		"test": "xo && tsd"
 	},
 	"devDependencies": {
-	  "clean-package": "^2.1.1",
-	  "cpr": "^3.0.1",
-	  "rimraf": "^3.0.2",
-	  "tsd": "^0.18.0",
-	  "vite": "^2.9.9",
-	  "xo": "^0.45.0"
+		"clean-package": "^2.1.1",
+		"cpr": "^3.0.1",
+		"rimraf": "^3.0.2",
+		"tsd": "^0.18.0",
+		"vite": "^2.9.9",
+		"xo": "^0.45.0"
 	},
 	"clean-package": {
 		"remove": [

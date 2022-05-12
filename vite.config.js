@@ -5,7 +5,7 @@ const viteConfig = defineConfig({
 		lib: {
 			name: 'screenfull',
 			entry: 'index.js',
-			formats: ['cjs', 'esm', 'umd'],
+			formats: ['cjs', 'esm'],
 		},
 	},
 });
