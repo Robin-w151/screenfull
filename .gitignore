@@ -14,4 +14,4 @@
 !.yarn/versions
 
 # output
-build/
+dist/

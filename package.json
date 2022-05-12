@@ -1,39 +1,55 @@
 {
 	"name": "screenfull",
-	"version": "6.0.1",
+	"version": "7.0.0",
 	"description": "Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which lets you bring the page or any element into fullscreen.",
 	"license": "MIT",
-	"repository": "sindresorhus/screenfull",
-	"funding": "https://github.com/sponsors/sindresorhus",
+	"repository": "Robin-w151/screenfull",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "sindresorhus.com"
+		"name": "Robin Wunderbaldinger",
+		"email": "robinwunderbaldinger@gmail.com"
 	},
+	"keywords": [
+	  "browser",
+	  "fullscreen"
+	],
 	"type": "module",
-	"exports": "./index.js",
+	"main": "dist/screenfull.cjs.js",
+    "module": "dist/screenfull.esm.js",
+    "browser": "dist/screenfull.umd.js",
 	"engines": {
 		"node": "^14.13.1 || >=16.0.0"
 	},
+	"files": [
+	  "/dist"
+	],
 	"scripts": {
+		"build": "vite build && cpr index.d.ts dist/screenfull.d.ts",
+		"prepack": "clean-package",
+	    "postpack": "clean-package restore",
 		"test": "xo && tsd"
 	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
-	"keywords": [
-		"browser",
-		"fullscreen"
-	],
 	"devDependencies": {
-		"tsd": "^0.18.0",
-		"xo": "^0.45.0"
+	  "clean-package": "^2.1.1",
+	  "cpr": "^3.0.1",
+	  "rimraf": "^3.0.2",
+	  "tsd": "^0.18.0",
+	  "vite": "^2.9.9",
+	  "xo": "^0.45.0"
+	},
+	"clean-package": {
+		"remove": [
+			"scripts",
+			"devDependencies",
+			"clean-package",
+			"xo",
+			"packageManager"
+		]
 	},
 	"xo": {
 		"envs": [
 			"node",
 			"browser"
 		]
-	}
+	},
+	"packageManager": "yarn@3.2.0"
 }
