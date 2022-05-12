@@ -1,6 +1,6 @@
 {
 	"name": "screenfull-cjs-es6",
-	"version": "7.0.0",
+	"version": "7.0.1",
 	"description": "Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which lets you bring the page or any element into fullscreen.",
 	"license": "MIT",
 	"repository": "Robin-w151/screenfull",
@@ -15,6 +15,7 @@
 	"type": "module",
 	"main": "dist/screenfull.cjs.js",
 	"module": "dist/screenfull.esm.js",
+	"types": "dist/screenfull.d.ts",
 	"engines": {
 		"node": "^14.13.1 || >=16.0.0"
 	},

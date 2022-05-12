@@ -6,6 +6,7 @@ const viteConfig = defineConfig({
 			name: 'screenfull',
 			entry: 'index.js',
 			formats: ['cjs', 'esm'],
+			fileName: format => `screenfull.${format}.js`,
 		},
 	},
 });
